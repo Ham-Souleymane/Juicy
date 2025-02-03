@@ -1,0 +1,143 @@
+@import url('https://fonts.googleapis.com/css2?family=Bona+Nova+SC:ital,wght@0,400;0,700;1,400&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Bona+Nova+SC:ital,wght@0,400;0,700;1,400&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Roboto", serif;
+}
+.hero{
+    position: relative;
+    background-color:#825dd2 ;
+    height: 100vh;
+}
+.hero::after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 80%;
+    height: 100%;
+    background: radial-gradient(circle, rgba(189, 159, 255, 0.8) 0%, transparent , transparent );
+    z-index: 1;
+}
+header{
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 80px;
+    z-index: 1000;
+
+}
+header nav{
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    height: 100%;
+}
+header .logo{
+    color: #efff;
+    text-decoration: none;
+    font-size: 40px;
+    letter-spacing: 2px;
+    font-family: "Anton",serif;
+    position: absolute;
+    left: 60px;
+   
+  
+}
+
+header .nav-links{
+    display: flex;
+    gap: 40px;
+margin-top: 20px;
+position: absolute;
+right: 60px;
+
+
+}
+header .nav-links a{
+    text-decoration: none;
+    color: rgb(196, 193, 193);
+    font-size: 25px;
+    font-family: serif;
+    transition: 0.3s;
+} 
+header .nav-links a:hover{
+
+color: #efff;    
+
+}
+.continer{
+    width: 80%;
+    margin: 0 auto;
+}
+.hero .continer{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 10;
+}
+#cans{
+    position: absolute;
+    width: 35%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    z-index: 2;
+    transition: all cubic-bezier(0.19, 1, 0.22, 1) 0.5s;
+}
+
+#leaf{
+    position: absolute;
+
+    top: 60%;
+    left: 10%;
+    width: 12%;
+    z-index: 10;
+}
+#blackberry1{
+    position: absolute;
+ top: 40%;
+ left: 60%;
+
+ transform: translate(-50%,-50%);
+
+ width: 13vw;
+}
+#blackberry2{
+    position: absolute;
+ top: 65%;
+ left: 40%;
+
+ transform: translate(-50%,-50%);
+ width: 15vw;
+}
+#blackberry3{
+    position: absolute;
+ top: 35%;
+ left: 40%;
+
+ transform: translate(-50%,-50%);
+ width: 6vw;
+}
+#coconoutleaf{
+    position: absolute;
+    width: 20%;
+    top: 10%;
+    right: 0 ;
+}
+.hero h1{
+    font-size: 28vw;
+    color: #efff;
+    font-weight: 900;
+    letter-spacing: 10px;   
+    font-family: "Anton",serif;
+    text-transform: uppercase;
+}
